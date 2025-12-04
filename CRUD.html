@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CRUD_Project</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="crud">
+      <div class="head">
+        <h2>crud</h2>
+        <p>project management system</p>
+      </div>
+      <div class="input">
+        <input placeholder="title" type="text" id="title" />
+        <div class="price">
+          <input placeholder="price" type="number" id="price" />
+          <input placeholder="tax" type="number" id="tax" />
+          <input placeholder="ads" type="number" id="ads" />
+          <input placeholder="discount" type="number" id="discount" />
+          <small id="total">:3211</small>
+        </div>
+        <input placeholder="count" type="number" id="count" />
+        <input placeholder="category" type="text" id="category" />
+        <button id="submit">create</button>
+      </div>
+
+      <div class="output">
+        <div class="searchBlock">
+          <input type="text" id="search" placeholder="search" />
+          <div class="btnsearch">
+            <button id="searchtitle">search by title</button>
+            <button id="searchcategory">search by category</button>
+          </div>
+        </div>
+        <table>
+          <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+          </tr>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>samsung</td>
+              <td>100</td>
+              <td>10</td>
+              <td>15</td>
+              <td>18</td>
+              <td>112</td>
+              <td>phone</td>
+              <td><button id="update">update</button></td>
+              <td><button id="delete">delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
