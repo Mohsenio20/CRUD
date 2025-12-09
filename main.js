@@ -179,7 +179,7 @@ function searchData(value) {
       if (datapro[i].title.includes(value.toLowerCase())) {
         table += `
               <tr>
-              <td>${i}</td>
+              <td>${i+1}</td>
               <td>${datapro[i].title}</td>
               <td>${datapro[i].price}</td>
               <td>${datapro[i].tax}</td>
@@ -196,7 +196,7 @@ function searchData(value) {
       if (datapro[i].category.includes(value.toLowerCase())) {
         table += `
               <tr>
-              <td>${i}</td>
+              <td>${i+1}</td>
               <td>${datapro[i].title}</td>
               <td>${datapro[i].price}</td>
               <td>${datapro[i].tax}</td>
